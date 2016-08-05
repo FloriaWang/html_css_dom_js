@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<style type="text/css">
+		h1{
+			font-size: 14px;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			line-height: 16px;
+		}
+		.gap{
+			height:15px;
+		}
+		label{
+			display: inline-block;
+			font-family: "宋体";
+			width:60px;
+			font-size: 12px;
+		}
+		input{
+			width: 198px;
+			height: 18px;
+			border:1px solid #ddd;
+		}
+		button{
+			margin-left: 60px;
+			width: 40px;
+			height:20px;
+			background-color: blue;
+			color:white;
+			font-size: 12px;
+			font-family: "宋体";
+			vertical-align: center;
+			text-align: center;
+			border:none;
+		}
+	</style>
+</head>
+<body>
+	<form action="/login">
+		<h1>登录网易通行证</h1>
+		<div class="gap"></div>
+		<label for="username">用户名：</label><input type="text" name="username">
+		<div class="gap"></div>
+		<label>密码：</label><input type="text" name="password">
+		<div class="gap"></div>
+		<button>登录</button>
+	</form>
+</body>
+</html>

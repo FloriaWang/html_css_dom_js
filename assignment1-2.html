@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tabletest</title>
+	<style>
+	/*表格的整体样式：合并表格边框，根据photoshop矩形框，表格的外框为2px，内框上下边框为2px，左右边框为1px*/
+		#delivery table{
+			border-collapse: collapse;
+			border:2px solid #f4f4f4;
+		}
+	/*表格中表头的样式：使用photosho获取背景色#f7f7f7，设置为表头背景色，设定内边距为15px，设置表头边框*/
+		#delivery th{
+			background-color: #f7f7f7;		
+			padding: 15px;
+			border-top:2px solid #f4f4f4; 
+			border-bottom:2px solid #f4f4f4;
+			border-left: 1px solid #f4f4f4;
+			border-right:1px solid #f4f4f4;
+			font-weight: bolder;
+		}
+	/*表格数据的样式：设定内边距为15px，设置表格边框*/
+		#delivery td{
+			padding:15px;
+			border-top:2px solid #f4f4f4; 
+			border-bottom:2px solid #f4f4f4;
+			border-left: 1px solid #f4f4f4;
+			border-right:1px solid #f4f4f4;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+<!--运费表创建-->
+	<div id="delivery">
+		<table>
+			<caption><h4>运费详情</h4></caption>
+			<thead>
+				<tr>
+					<th>
+						区域
+					</th>
+					<th>
+						寄达地
+					</th>
+					<th>
+						首重（元/1000g）
+					</th>
+					<th>
+						续重（元/1000g)
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th rowspan="2">一区</th>
+					<td>浙江、上海、江苏</td>
+					<td>6</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>江西、安徽</td>
+					<td>7</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>二区</th>
+					<td>吉林、黑龙江、云南</td>
+					<td>10</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<th>三区</th>
+					<td>新疆、西藏</td>
+					<td>15</td>
+					<td>10</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

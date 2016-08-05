@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css-assignment1</title>
+	<style>
+		html body{
+			height:100%;
+			width:100%;
+		}
+		.parent{
+			display: flex;
+			color: white;
+			margin:0 auto;
+			text-align:center;
+
+		}
+		.side{
+			width:200px;
+			background: #c00000;
+			float: left;
+			padding-top: 75px;
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-bottom: 75px;
+			font-size: 40px;
+			font-family: "微软雅黑";	
+			margin:0px;	
+		}
+		.main{
+			flex:1 1 0;
+			background: #4f81bd;
+			float:right;
+			padding-top:75px;
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-bottom: 75px;
+			font-size: 40px;
+			font-family: "微软雅黑";
+			margin-left:10px;
+		}
+		.clearfix:after{
+			content:'.';
+			clear:both;
+			display:block;
+			overflow:hidden;
+			visibility: hidden;
+			height:0;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent clearfix"> 
+    	<div class="side">侧栏</div>
+    	<div class="main">主栏</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>assignment-form</title>
+</head>
+<body>
+	<form action="/myAccount" method="post">
+		<div>
+			<label for="image">头像</label>&nbsp;&nbsp;
+			<input type="file" name="image">
+		</div>   
+		<br> 
+		<div>
+			<label for="username">昵称</label>&nbsp;&nbsp;
+			<input type="text"name="username">
+		</div>  
+		<br>
+		<div>
+			<label for="education">学历</label>&nbsp;&nbsp;
+			<select name="" name="education">
+				<option value="0">大专</option>
+				<option value="1">本科</option>
+			</select>
+		</div>
+		<br>
+		<div>
+			<label for="gender">性别</label>&nbsp;&nbsp;
+			<input type="radio" name="gender" value="male" id="male" >
+			<label for="male">男</label>
+			<input type="radio" name="gender" value="female" id="female">
+			<label for="female">女</label>
+		</div>
+		<br>
+		<div>
+			<label for="hobby">爱好</label>&nbsp;&nbsp;
+			<input type="checkbox" name="hobby" id="movie">
+			<label for="movie">电影</label>
+			<input type="checkbox" name="hobby" id="photo">
+			<label for="photo">摄影</label>
+			<input type="checkbox" name="hobby" id="music">
+			<label for="music">音乐</label>
+			<input type="checkbox" name="hobby" id="reading">
+			<label for="reading">阅读</label>
+		</div>
+		<br>
+		<div>
+			<label for="signature">签名</label>&nbsp;&nbsp;
+			<textarea name="signature" id="textarea1" cols="30" rows="10"></textarea>
+		</div>
+		<br>
+		<div>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<button name="save" type="submit">保存</button>
+		</div>
+	</form>
+</body>
+</html>

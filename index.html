@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网易新闻</title>
+	<style type="text/css">
+		img{
+			width:100px;
+			height:100px;
+			background-color: blue;
+			float:left;
+			margin-right: 15px;
+			padding:0px;
+		}
+		.text{
+			margin-left: 115px;
+			font-family: "宋体";
+			line-height: 25px;
+			height: 100px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			position: relative;
+		}
+		.text .title{
+			font-weight: bold;
+			font-size: 16px;
+			color:black;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			margin:0px;
+			height:25px;
+		}
+		.text .content{
+			margin:0px;
+			font-size: 14px;
+			color:#666;
+		}
+		.text .end{
+			position:absolute;
+			right: 0px;
+			bottom: 0px;
+			height: 25px;
+			width:17px;
+			background-color: white;
+			font-size: 14px;
+			color: #666;
+		}
+		/*清除浮动，不知道为什么会破坏布局*/
+		.clear{
+			clear:both;
+			display: none;
+			visibility: hidden;
+			margin:0px;
+			padding:0px;
+		}
+	</style>
+</head>
+<body>
+<div class="news">
+	<div class="pic">
+		<img src="http://163.com/x.jpg">
+	</div>
+	<div class="text">
+		<h1 class="title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h1>
+		<p class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+		</p>
+		<div class="end">...</div>
+		<div class="clear">.</div>
+	</div>
+</div>
+</body>
+</html>

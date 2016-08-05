@@ -1,0 +1,55 @@
+<!--要求如效果图中标注，且总体水平居中，两栏间距为10px，请写出这个两列布局的CSS，要求使用浮动布局方法，并需要清除浮动。-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css-assignment1</title>
+	<style>
+		.parent{
+			width:810px;
+			color: white;
+			margin:0 auto;
+			text-align:center;
+
+		}
+		.side{
+			width:200px;
+			background: #c00000;
+			float: left;
+			padding-top: 75px;
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-bottom: 75px;
+			font-size: 40px;
+			font-family: "微软雅黑";	
+			margin:0px;	
+		}
+		.main{
+			width:600px;
+			background: #4f81bd;
+			float:right;
+			padding-top:75px;
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-bottom: 75px;
+			font-size: 40px;
+			font-family: "微软雅黑";
+			margin:0px;
+		}
+		.clearfix:after{
+			content:'.';
+			clear:both;
+			display:block;
+			overflow:hidden;
+			visibility: hidden;
+			height:0;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent clearfix"> 
+    	<div class="side">侧栏</div>
+    	<div class="main">主栏</div>
+	</div>
+</body>
+</html>

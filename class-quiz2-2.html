@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.container{
+			font-size: 0;
+			border:1px solid #999;
+			width:572px;
+			padding:0;
+			margin: 0;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.container .tab{
+			display: inline-block;
+			font-size: 14px;
+			font-family: "微软雅黑";
+			border: 1px solid #cecece;
+			background-color: #f1f1f1;
+			text-align: center;
+			width:190px;
+			padding:10px 0;
+			margin:0;
+			border-top: 0px;
+		}
+		.container .start{
+			border-left: 0px;
+			border-right: 0px;
+			border-bottom-color: white;
+			background-color: white;
+		}
+		.container .end{
+			border-right: 0px;
+			border-left:  0px;
+		}
+		.container .content{
+			width: 572px;
+			padding:20px;
+			align-self:stretch;
+			font-size: 14px;
+			font-family: "微软雅黑";
+			white-space:pre-wrap;
+			word-break: break-all;
+			margin:0px;
+		}
+		.container .content p{
+			margin: 0;
+			padding: 0;
+		}
+		.plan, .skill{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<span class="tab start">课程</span>
+		<span class="tab">学习计划</span>
+		<span class="tab end">技能图谱</span>
+		<div class="content"><p class="course">课程内容</p><p class="plan">学习计划内容</p><p class="skill">技能图谱内容</p></div>
+	</div>
+</body>
+</html>
